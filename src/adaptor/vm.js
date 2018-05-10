@@ -43,12 +43,12 @@ export default function VMVSPSourceAdaptor(vsp) {
         ''}`
 
       componentDidUpdate() {
-        super.componentDidUpdate.apply(this, arguments)
+        super.componentDidUpdate && super.componentDidUpdate.apply(this, arguments)
         _update.call(this)
       }
 
       componentDidMount() {
-        super.componentDidMount.apply(this, arguments)
+        super.componentDidMount && super.componentDidMount.apply(this, arguments)
         _update.call(this)
         vsp.run()
       }

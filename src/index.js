@@ -7,6 +7,7 @@
 import * as u from 'url'
 import * as qs from 'querystring'
 import md5 from 'md5'
+import CircularJSON from 'circular-json'
 import persistLocalStorage from './persistence/localStorage'
 
 const debug = require('debug')('vsp')
@@ -98,7 +99,7 @@ export class VSP {
   }
 
   generateUid(store) {
-    return md5(JSON.stringify(store))
+    return md5(CircularJSON.stringify(store))
   }
 
   async generateShared() {
