@@ -5,7 +5,6 @@
  * @description
  */
 
-import vsp from '../index'
 import * as React from 'react'
 import { isViewModelComponent, Root } from 'react-mobx-vm'
 
