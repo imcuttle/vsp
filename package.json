@@ -1,11 +1,12 @@
 {
   "name": "vsp",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "lib/index.js",
-  "module": "lib/index.es.js",
-  "jsnext:main": "lib/index.es.js",
-  "description": "view-store-persistence",
+  "description": "view-state-persistence",
   "author": "imcuttle",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "json-server": "json-server --watch test/fixture/db.json",
     "gojs": "gojs -i test/fixture/vm/index.js -p 9999",
@@ -15,7 +16,7 @@
     "prepublishOnly": "npm run dist"
   },
   "keywords": [
-    "vsp"
+    "view-state-persistence"
   ],
   "license": "MIT",
   "repository": "imcuttle/vsp",
