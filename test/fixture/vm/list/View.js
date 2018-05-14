@@ -61,8 +61,11 @@ export default class View extends React.Component {
       .then(response => response.json())
       .then(json => {
         list.push(json)
-        person.setValue('name', '')
-        person.setValue('description', '')
+        person.assign({
+          name: '',
+          email: '',
+          phone: ''
+        })
       })
   }
 
